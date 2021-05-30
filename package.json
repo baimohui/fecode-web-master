@@ -1,0 +1,28 @@
+{
+  "name": "fecode-web",
+  "author": {
+    "name": "promeyang",
+    "email": "442348464@qq.com"
+  },
+  "version": "1.0.0",
+  "description": "fecode-web",
+  "repository": "http://gitlab.gzlingren.com/fecode/fecode-web.git",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nuxt",
+    "gray": "cross-env PATH_TYPE=gray nuxt build",
+    "build": "cross-env PATH_TYPE=production nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.10.3",
+    "nuxt": "^2.12.2",
+    "vue-router": "^3.5.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "less": "^3.11.1",
+    "less-loader": "^6.1.0"
+  }
+}
