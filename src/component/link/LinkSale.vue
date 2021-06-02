@@ -20,7 +20,11 @@
               NR-950金红石型钛白粉 通用型二氧化钛 高遮盖钛白粉
             </div>
             <div class="m">
-              <div class="total"><div class="proceed">50%</div></div>
+              <div class="total">
+                <div class="proceed">
+                  <div>50%</div>
+                </div>
+              </div>
               <div class="tt">共300吨</div>
             </div>
             <div class="b">
@@ -59,7 +63,7 @@ export default {
 <style scoped>
 /* @import url(); 引入公共css类 */
 .linksale {
-  font-size: 14px;
+  font-size: 4vw;
   background-color: #fdfcfc;
 }
 .content {
@@ -128,15 +132,20 @@ export default {
 .salelist .desc .m .total .proceed {
   width: 60%;
   height: 100%;
-  line-height: 100%;
+  line-height: 60%;
   border-radius: 1vw;
   background-color: #d8a857;
   text-align: center;
   font-size: 2vw;
   color: #fff;
 }
+.proceed div {
+  transform: scale(0.7);
+}
 .salelist .desc .b {
-  font-size: 10px;
+  font-size: 2vw;
+  width: 110%;
+  transform: scale(0.9);
   display: flex;
   justify-content: space-between;
 }
@@ -159,15 +168,15 @@ export default {
   border-style: solid;
   border-color: transparent;
   border-bottom-color: #f47a86;
-  /* transform: rotate(45deg); */
   position: absolute;
   bottom: 0;
   left: -10%;
-  /* left: -9%; */
 }
 
 .flash .t {
-  font-size: 10px;
+  width: 110%;
+  font-size: 2vw;
+  transform: scale(0.9);
   color: rgba(0, 0, 0, 0.4);
 }
 .flash .m {

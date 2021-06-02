@@ -13,13 +13,15 @@ export default {
 
 <style scoped>
 .cetitle {
-  margin: 20px auto;
+  margin: 0 auto;
+  margin-top: 0.9rem;
+  margin-bottom: 0.4rem;
   width: 90%;
-  font-size: 18px;
+  font-size: 0.39rem;
   text-align: center;
 }
 .cetitle .en {
-  font-size: 12px;
+  font-size: 0.2rem;
   color: #797979;
 }
 </style>

@@ -7,10 +7,10 @@
       <div class="t">NR-950金红石型钛白粉</div>
       <div class="b">
         <ul class="l">
-          <li>种类：Dulux/多乐士</li>
+          <li>种类：Dulux</li>
           <li>参数：哑光</li>
           <li>产地：中国大陆</li>
-          <li>型号：A8607-65016</li>
+          <li>型号：A8607</li>
         </ul>
         <div class="r" @click="clickDetail">查看详情</div>
       </div>
@@ -42,7 +42,7 @@ export default {
   outline: 1px solid #d8a857;
 }
 .segoods .drum img {
-  height: 25vw;
+  height: 20vw;
 }
 .desc {
   height: 30vw;
@@ -57,22 +57,24 @@ export default {
 .desc .b {
   display: flex;
   justify-content: space-around;
+  height: 6vh;
 }
 .desc .b .l {
-  width: 75%;
+  width: 65%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  font-size: 8px;
+  justify-content: flex-start;
 }
 .desc .b .l li {
-  width: 45%;
+  width: 50%;
+  font-size: 2vw;
+  transform: scale(.8);
 }
 .desc .b .r {
-  padding: 3% 4%;
+  padding: 3% 2%;
   background-color: #d8a857;
   color: #fff;
-  font-size: 10px;
+  font-size: 2vw;
   margin-right: 2%;
 }
 .desc .b .r:hover {

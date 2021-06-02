@@ -57,7 +57,7 @@ export default {
 /* @import url(); 引入公共css类 */
 .category {
   display: flex;
-  font-size: 12px;
+  font-size: 2vw;
   color: #fff;
   background-color: #0b294d;
   margin-bottom: 1%;
@@ -80,11 +80,11 @@ export default {
   padding-bottom: 4%;
 }
 .detail .text {
-  font-size: 16px;
+  font-size: 5vw;
   padding: 5% 0;
 }
 .detail .join {
-  font-size: 14px;
+  font-size: 4vw;
   font-weight: bold;
   width: 30%;
   text-align: center;
@@ -96,10 +96,10 @@ export default {
   flex-wrap: wrap;
   justify-content: space-evenly;
   font-size: 12px;
+  padding-bottom: 5%;
 }
 .detail .b li {
   width: 45%;
-  height: 33vw;
   padding: 3% 1%;
   margin-bottom: 1%;
   background-color: rgba(37, 37, 214, 0.3);

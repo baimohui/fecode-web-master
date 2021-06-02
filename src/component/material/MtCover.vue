@@ -1,6 +1,6 @@
 <template>
   <div class="mtcover">
-    <icon-cover height="40" />
+    <icon-cover height=40 />
     <div class="text">
       <div class="t">原材料销售、贸易商转型解决方案</div>
       <div class="m">
@@ -27,7 +27,7 @@ export default {
 <style scoped>
 .mtcover {
   position: relative;
-  font-size: 14px;
+  font-size: 3vw;
   color: #d4aa58;
 }
 .mtcover .text {
@@ -43,7 +43,7 @@ export default {
   text-align: center;
 }
 .mtcover .text .m {
-  font-size: 12px;
+  font-size: 2vw;
   color: #fff;
 }
 .mtcover .text .b {

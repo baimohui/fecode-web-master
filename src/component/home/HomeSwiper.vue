@@ -1,19 +1,14 @@
 <template>
   <div class="home-swiper">
-    <swiper class="swiper">
+    <swiper class="sswiper">
       <swiper-item>
         <a>
-          <img src="~assets/image/jbgi.jpg" />
+          <img src="~assets/image/unibgi.jpg" />
         </a>
       </swiper-item>
       <swiper-item>
         <a>
-          <img src="~assets/image/jbgi.jpg" />
-        </a>
-      </swiper-item>
-      <swiper-item>
-        <a>
-          <img src="~assets/image/jbgi.jpg" />
+          <img src="~assets/image/newspic2.jpg" />
         </a>
       </swiper-item>
       <swiper-item>
@@ -21,8 +16,16 @@
           <img src="~assets/image/unibgi.jpg" />
         </a>
       </swiper-item>
+      <swiper-item>
+        <a>
+          <img src="~assets/image/newspic2.jpg" />
+        </a>
+      </swiper-item>
     </swiper>
     <div class="row">
+      <div class="jelee">
+        <img src="~assets/image/about/jelee.png" alt="" />
+      </div>
       <form class="table" action="#">
         <div class="search">
           <img src="~assets/image/search.png" alt="" />
@@ -30,14 +33,19 @@
         <input class="input" type="text" />
         <!-- <input class="submit" type="submit" value="搜索" /> -->
         <div class="submit">
-          <nuxt-link :to="{ name: 'search' }">搜索 </nuxt-link>
+          <nuxt-link :to="{ name: 'index' }">搜索 </nuxt-link>
         </div>
       </form>
-      <div>
-        <nuxt-link :to="{ name: 'material'}"><img src="~assets/image/person.png" alt="" /></nuxt-link>
+      <div class="ricon">
+        <nuxt-link :to="{ name: 'material' }"
+          ><img src="~assets/image/person.png" alt=""
+        /></nuxt-link>
       </div>
-      <div>
-        <a href="#"><img src="~assets/image/menu.png" alt="" /></a>
+      <div class="container">
+        <input class="nav-checkbox" id="toggle" type="checkbox" />
+        <label class="nav-label" for="toggle">
+          <i class="icon icon-menu"></i>
+        </label>
       </div>
     </div>
     <ul class="col">
@@ -46,9 +54,11 @@
       <li><nuxt-link :to="{ name: 'contact' }">联系我们</nuxt-link></li>
     </ul>
     <div class="caption">
-      <div class="en">CREATE THE INTERCONNECTION<br/>OF COATING INDUSTRY</div>
-      <div class="cn">金色摇篮<br/>全面架构涂料产业智联互通</div>
+      <div class="en">CREATE THE INTERCONNECTION<br />OF COATING INDUSTRY</div>
+      <div class="cn">金色摇篮</div>
+      <div class="cn">全面架构涂料产业智联互通</div>
     </div>
+
   </div>
 </template>
 
@@ -65,80 +75,143 @@ export default {
 </script>
 
 <style scoped>
-.home-swiper {
+.container {
+  width: 0.36rem;
+  height: 0.5rem;
+  position: relative;
+  top: -0.4rem;
+}
+.icon-menu,
+.icon-menu::before,
+.icon-menu::after {
+  width: 0.33rem;
+  height: 0.07rem;
+  background-color: rgba(255,255,255,.8);
+  display: block;
+  transition: all 0.3s;
+}
+.icon-menu {
   position: relative;
 }
-.swiper {
-  height: 30vh;
+.icon-menu::before,
+.icon-menu::after {
+  position: absolute;
+  content: "";
+}
+.icon-menu::before {
+  top: -0.12rem;
+}
+.icon-menu::after {
+  top: 0.12rem;
+}
+#toggle:checked ~ label .icon-menu {
+  transform: rotate(225deg);
+}
+#toggle:checked ~ label .icon-menu::before {
+  top: 0;
+  transform: rotate(90deg);
+}
+#toggle:checked ~ label .icon-menu::after {
+  top: 0;
+}
+
+.home-swiper {
+  position: relative;
+  height: 4.12rem;
+}
+.sswiper {
+  height: 4.12rem;
 }
 .row {
-  width: 230px;
+  width: 7rem;
+  height: 0.56rem;
+  line-height: 0.56rem;
   display: flex;
   justify-content: space-evenly;
-  height: 25px;
-  line-height: 25px;
   position: absolute;
-  top: 7%;
-  right: 3%;
+  top: 0.36rem;
+  right: 0.08rem;
+  /* border: 1px solid red; */
 }
-.row img {
-  width: 18px;
-  padding-top: 5px;
+.row .jelee {
+  display: flex;
+  align-items: center;
+}
+.row .jelee img {
+  width: 2.04rem;
+}
+.row .ricon img {
+  width: 0.34rem;
+  padding-top: 0.14rem;
 }
 .table {
-  width: 170px;
+  width: 3.42rem;
   border: 1px solid #fff;
-  border-radius: 15px;
+  border-radius: 0.28rem;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  margin-left: 0.24rem;
+}
+.table .search {
+  height: 0.3rem;
+  padding-left: 0.12rem;
 }
 .table .search img {
-  width: 19px;
-  padding-top: 5px;
-  padding-left: 6px;
+  width: 0.3rem;
 }
 .input {
   border: none;
   outline: none;
-  width: 110px;
+  width: 60%;
   background-color: transparent;
 }
 .submit {
   background-color: transparent;
   border: none;
-  font-size: 12px;
+  font-size: 0.24rem;
   color: #fff;
-  padding-right: 3px;
+  padding-right: 0.15rem;
 }
 .col {
-  padding: 5px 0;
-  width: 100px;
+  height: 2.22rem;
+  width: 1.9rem;
   text-align: center;
   position: absolute;
   color: #d4aa58;
-  top: 55px;
+  top: 1rem;
   right: 0;
-  background-color: rgba(22, 22, 22, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .col li {
-  height: 38px;
-  line-height: 38px;
+  font-size: 0.24rem;
+  height: 0.74rem;
+  line-height: 0.74rem;
+}
+.col li:hover {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .caption {
   position: absolute;
-  top: 40%;
-  left: 12%;
-  font-size: 12px;
+  top: 1.65rem;
+  left: 0.78rem;
+  font-size: 0.12rem;
   font-weight: bold;
-  line-height: 120%;
 }
-.caption .en{
-  /* font-size: 12px; */
+.caption .en {
   color: #d8a857;
-  padding-bottom: 3%;
+  font-size: 0.2364rem;
+  line-height: 120%;
+  padding-bottom: 0.05rem;
 }
 .caption .cn {
   color: #fff;
-  font-size: 14px;
+  font-size: 0.3rem;
+  line-height: 120%;
 }
+/* @media screen and (min-width: 1000px) {
+  .caption .cn {
+    padding-top: 4%;
+  }
+} */
 </style>

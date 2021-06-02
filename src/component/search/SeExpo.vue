@@ -74,12 +74,19 @@ export default {
 
 <style scoped>
 /* @import url(); 引入公共css类 */
+.sewin {
+  font-size: 2vw;
+}
 .seshow {
   position: relative;
   margin-top: 5%;
 }
 .seshow img {
-  height: 100px;
+  height: 15vh;
+}
+.seshow .top {
+  text-align: center;
+  background-color: #1b1b33;
 }
 .seshow .bottom {
   margin-top: 3%;
@@ -94,12 +101,12 @@ export default {
   top: 10%;
   left: 5%;
   color: #fff;
-  line-height: 250%;
 }
 .seshow .text .f {
-  font-size: 16px;
+  font-size: 4vw;
 }
 .seshow .text .s {
+  font-size: 2vw;
   color: rgba(255, 255, 255, 0.6);
 }
 

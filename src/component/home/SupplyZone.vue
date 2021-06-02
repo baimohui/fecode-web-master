@@ -1,9 +1,10 @@
 <template>
   <div class="zone">
-    <div class="title">
-      <h1 class="cn">供需专区</h1>
-      <p class="en">THE ZONE SUPPLY AND DEMAND</p>
-    </div>
+    <ce-title>
+      <template v-slot:cn>供需专区</template>
+      <template v-slot:en>THE ZONE SUPPLY AND DEMAND</template>
+    </ce-title>
+
     <div class="sort">
       <div>
         <div class="img">
@@ -30,13 +31,15 @@
         <p>天下金涂</p>
       </div>
     </div>
+
+
     <div class="detail">
       <div class="caption">
         <div class="head">溶剂专区</div>
         <div class="explain">
           <div class="f">墙面漆 涂料18L</div>
           <div class="m">油漆是一种能牢固覆盖在物体表面，起保护、装饰、标志和其他特殊用途的化学混合物，一定强度、连续的固态薄膜。这样形成的膜统称涂膜，又称漆膜或涂层...</div>
-          <div class="l">了解详情></div>
+          <div class="l">了解详情 ></div>
         </div>
       </div>
       <div class="enter">进入专区</div>
@@ -45,7 +48,9 @@
 </template>
 
 <script>
+import CeTitle from "../content/CeTitle.vue";
 export default {
+  components: { CeTitle },
   name: "SupplyZone",
 };
 </script>
@@ -54,79 +59,90 @@ export default {
 /* .zone {
   background-color: rgb(247, 245, 136);
 } */
-.title {
-  margin: 20px auto;
-  width: 60%;
-  font-size: 14px;
-  text-align: center;
-}
-.title .en {
-  font-size: 12px;
-}
 .sort {
   display: flex;
   justify-content: space-around;
+  font-size: 0.24rem;
+  /* border: 1px solid red; */
 }
 .sort > div {
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-size: 14px;
   font-weight: bold;
+  margin-bottom: 0.48rem;
+  position: relative;
+  /* border: 1px solid red; */
+}
+.sort >div:hover {
+  color: #406efa;
+}
+.sort>div:hover::before {
+  content: "";
+  border: 0.25rem solid transparent;
+  border-bottom-color: #000324;
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0.25rem;
 }
 .sort > div .img {
-  width: 40px;
-  margin: 3px auto;
+  width: 10vw;
+  margin: 0 auto;
 }
 .detail {
   background-image: url("~assets/image/seabg.jpg");
   color: #fff;
-  padding-bottom: 2px;
+  /* padding-bottom: 2px; */
+  height: 5.85rem;
 }
 .detail .caption {
-  width: 90%;
+  width: 6.76rem;
   margin: 0 auto;
-  padding-top: 15px;
+  padding-top: 0.39rem;
 }
 .detail .caption .head {
-  height: 35px;
-  line-height: 35px;
-  padding-left: 20px;
-  background-color: #4065D0;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  padding-left: 0.38rem;
+  font-size: 0.24rem;
+  font-weight: bold;
+  background-color: #4065d0;
 }
 .detail .caption .explain {
-  padding-left: 20px;
-  font-size: 12px;
-  height: 160px;
+  padding-left: 0.38rem;
+  font-size: 0.1rem;
+  height: 3.32rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding-bottom: 10px;
+  padding-bottom: 0.2rem;
   border: 1px solid rgb(109, 97, 97);
   border-top: none;
 }
 .detail .caption .explain .f {
-  font-size: 14px;
-  padding-top: 5px;
+  font-size: 0.24rem;
+  padding-top: 2%;
 }
 .detail .caption .explain .m {
   line-height: 200%;
+  color: #B7B8C1;
 }
 .detail .caption .explain .l {
-  width: 100px;
-  height: 30px;
-  line-height: 30px;
+  width: 1.93rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
   text-align: center;
-  color: #D4AA58;
-  border: 1px solid #D4AA58;
+  color: #d4aa58;
+  border: 1px solid #d4aa58;
 }
 .detail .enter {
-  width: 110px;
-  height: 30px;
-  font-size: 12px;
-  background-color: #D4AA58;
+  width: 2.58rem;
+  height: 0.65rem;
+  line-height: 0.65rem;
+  font-size: 0.24rem;
+  background-color: #d4aa58;
   text-align: center;
-  line-height: 30px;
-  margin: 20px auto;
+  margin: 0 auto;
+  margin-top: 0.32rem;
 }
 </style>

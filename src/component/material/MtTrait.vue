@@ -36,17 +36,19 @@ export default {
   flex-wrap: wrap;
   justify-content: space-between;
   color: #fff;
-  font-size: 12px;
+  font-size: 2vw;
 }
 .mtlist li {
-  padding: 6% 8%;
+  /* padding: 6% 8%; */
+  padding: 6% 0;
+  width: 49%;
   margin-bottom: 1%;
   text-align: center;
   background-image: url("~assets/image/material/mtbgi.jpg");
   background-size: contain;
 }
 .mtlist li .t{
-  font-size: 16px;
+  font-size: 4vw;
   color: #d4aa58;
 }
 </style>

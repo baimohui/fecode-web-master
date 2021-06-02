@@ -18,7 +18,7 @@
         <div class="text">
           <div class="t">涂料技术研发平台-重磅金技</div>
           <div class="b">
-            重磅金技，作为金色摇篮技术单元，通过平台中心实验室、高新材料
+            重磅金技，作为金色摇篮技术单元，通过平台中心实验室、高新
           </div>
         </div>
         <div class="todetail">点击查看详情</div>
@@ -30,7 +30,7 @@
         <div class="text">
           <div class="t">涂料技术研发平台-重磅金技</div>
           <div class="b">
-            重磅金技，作为金色摇篮技术单元，通过平台中心实验室、高新材料
+            重磅金技，作为金色摇篮技术单元，通过平台中心实验室、高新
           </div>
         </div>
         <div class="todetail">点击查看详情</div>
@@ -42,7 +42,7 @@
         <div class="text">
           <div class="t">涂料技术研发平台-重磅金技</div>
           <div class="b">
-            重磅金技，作为金色摇篮技术单元，通过平台中心实验室、高新材料
+            重磅金技，作为金色摇篮技术单元，通过平台中心实验室、高新
           </div>
         </div>
         <div class="todetail">点击查看详情</div>
@@ -54,7 +54,7 @@
         <div class="text">
           <div class="t">涂料技术研发平台-重磅金技</div>
           <div class="b">
-            重磅金技，作为金色摇篮技术单元，通过平台中心实验室、高新材料
+            重磅金技，作为金色摇篮技术单元，通过平台中心实验室、高新
           </div>
         </div>
         <div class="todetail">点击查看详情</div>
@@ -79,6 +79,10 @@ export default {
 
 <style scoped>
 /* @import url(); 引入公共css类 */
+.aboutedge .img {
+  text-align: center;
+  background-color: #010216;
+}
 .pflist {
   display: flex;
   flex-wrap: wrap;
@@ -86,11 +90,14 @@ export default {
 }
 .pflist .pf {
   width: 47%;
-  font-size: 14px;
+  font-size: 3vw;
   margin: 5% 0;
 }
+.pf .cover {
+  text-align: center;
+}
 .pf .text .t {
-  font-size: 14px;
+  font-size: 3vw;
   font-weight: bold;
   line-height: 250%;
 }
@@ -106,7 +113,7 @@ export default {
   margin-top: 8%;
 }
 .loadmore {
-  font-size: 12px;
+  font-size: 2vw;
   text-align: center;
 }
 .loadmore span {

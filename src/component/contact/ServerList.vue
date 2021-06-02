@@ -59,23 +59,23 @@ export default {
 
 <style scoped>
 p {
-  font-size: 14px;
+  font-size: 3vw;
 }
 .serverlist {
   position: relative;
-  margin-top: 50px;
-  margin-bottom: 20px;
+  margin-top: 6vh;
+  margin-bottom: 5%;
 }
 .serverlist .list {
   position: absolute;
-  top: -25px;
+  top: -4vh;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   /* background-color: #414f76; */
 }
 .serverlist .bbg {
-  height: 250px;
+  height: 36vh;
   background-color: #414f76;
 }
 .server {
@@ -89,28 +89,28 @@ p {
 }
 .server .desc {
   padding: 3% 0 20% 3%;
-  font-size: 12px;
+  font-size: 2vw;
   line-height: 120%;
 }
 .avator {
   text-align: center;
 }
 .avator img {
-  width: 50px;
-  height: 50px;
+  width: 8vh;
+  height: 8vh;
   border-radius: 50%;
   object-fit: cover;
   object-position: 50% 0%;
 }
 .line {
   border-left: 2px solid #CBAF65;
-  padding-left: 3px;
+  padding-left: 1%;
   line-height: 0.8;
 }
 .tele {
-  font-size: 12px;
+  font-size: 2vw;
   color: #7B7B7B;
-  margin-top: 10px;
-  margin-left: 5px;
+  margin-top: 3%;
+  margin-left: 2%;
 }
 </style>

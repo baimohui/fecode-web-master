@@ -6,9 +6,7 @@
         <img src="~assets/image/search/gsearch.png" alt="" />
       </div>
       <div class="person">
-        <nuxt-link :to="{ name: 'material' }">
-          <img src="~assets/image/search/gperson.png" alt="" />
-        </nuxt-link>
+        <img src="~assets/image/search/gperson.png" alt="" />
       </div>
       <div class="menu">
         <nuxt-link :to="{ name: 'index' }">
@@ -21,34 +19,34 @@
 
 <script>
 export default {
-  name: "SeHead",
+  name: "SearchHead",
 };
 </script>
 
 <style scoped>
 .searchhead {
-  height: 8vh;
-  line-height: 8vh;
+  height: 50px;
+  line-height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #e1e1e1;
 }
 .searchhead .mark {
-  height: 3vh;
-  line-height: 3vh;
+  height: 20px;
   padding-left: 4%;
+  line-height: 50px;
 }
 .searchhead .mark img {
-  height: 3vh;
+  height: 20px;
 }
 .searchhead .icons {
   display: flex;
   justify-content: space-evenly;
   width: 30%;
-  height: 3vh;
+  height: 20px;
 }
 .searchhead .icons img {
-  width: 3vh;
+  width: 20px;
 }
 </style>

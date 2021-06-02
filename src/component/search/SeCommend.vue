@@ -3,27 +3,39 @@
     <div class="cm4u">为你推荐</div>
     <ul class="cmlist">
       <li>
-        <div class="img"><img src="~assets/image/search/drum1.png" alt="" /></div>
+        <div class="img">
+          <img src="~assets/image/search/drum1.png" alt="" />
+        </div>
         <div class="name">墙面漆 涂料18L</div>
       </li>
       <li>
-        <div class="img"><img src="~assets/image/search/drum2.png" alt="" /></div>
+        <div class="img">
+          <img src="~assets/image/search/drum2.png" alt="" />
+        </div>
         <div class="name">墙面漆 涂料18L</div>
       </li>
       <li>
-        <div class="img"><img src="~assets/image/search/drum3.png" alt="" /></div>
+        <div class="img">
+          <img src="~assets/image/search/drum3.png" alt="" />
+        </div>
         <div class="name">墙面漆 涂料18L</div>
       </li>
       <li>
-        <div class="img"><img src="~assets/image/search/drum3.png" alt="" /></div>
+        <div class="img">
+          <img src="~assets/image/search/drum3.png" alt="" />
+        </div>
         <div class="name">墙面漆 涂料18L</div>
       </li>
       <li>
-        <div class="img"><img src="~assets/image/search/drum2.png" alt="" /></div>
+        <div class="img">
+          <img src="~assets/image/search/drum2.png" alt="" />
+        </div>
         <div class="name">墙面漆 涂料18L</div>
       </li>
       <li>
-        <div class="img"><img src="~assets/image/search/drum1.png" alt="" /></div>
+        <div class="img">
+          <img src="~assets/image/search/drum1.png" alt="" />
+        </div>
         <div class="name">墙面漆 涂料18L</div>
       </li>
     </ul>
@@ -39,6 +51,9 @@ export default {
 
 <style scoped>
 /* @import url(); 引入公共css类 */
+.secommend {
+  font-size: 2vw;
+}
 .cm4u {
   background-image: url("~assets/image/search/recommendbg.jpg");
   color: #fff;

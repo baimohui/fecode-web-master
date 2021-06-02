@@ -80,7 +80,7 @@ export default {
 <style scoped>
 .linkswiper {
   position: relative;
-  font-size: 14px;
+  font-size: 4vw;
 }
 /* .swiper {
   height: 30vh;
@@ -98,7 +98,7 @@ export default {
 }
 .row img {
   /* border: 1px solid blue; */
-  width: 16px;
+  width: 5vw;
   padding-top: 5px;
 }
 .caption {
@@ -126,7 +126,7 @@ export default {
 }
 .categories li {
   position: relative;
-  padding: 0% 3%;
+  padding: 0% 2%;
 }
 .categories li.line::after {
   content: "";
@@ -138,8 +138,12 @@ export default {
   background: rgba(255, 255, 255, 0.7);
 }
 .categories .b {
-  font-size: 8px;
+  font-size: 2vw;
   opacity: 0.6;
   line-height: 120%;
+  width: 150%;
+  transform: scale(0.7);
+  position: relative;
+  left: -25%;
 }
 </style>

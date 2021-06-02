@@ -59,7 +59,7 @@ export default {
 <style scoped>
 /* @import url(); 引入公共css类 */
 p {
-  font-size: 12px;
+  font-size: 2vw;
 }
 .desc {
   margin: 5%;

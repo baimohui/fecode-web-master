@@ -71,7 +71,7 @@ export default {
 <style scoped>
 /* @import url(); 引入公共css类 */
 .linkshow {
-  font-size: 14px;
+  font-size: 4vw;
 }
 .former .t {
   color: #eac69c;
@@ -79,6 +79,9 @@ export default {
   line-height: 300%;
   background-image: url("~assets/image/link/l1.jpg");
   background-size: cover;
+}
+.former .m {
+  text-align: center;
 }
 .former .b {
   display: flex;
@@ -116,11 +119,11 @@ export default {
 .later .m li .s {
   display: flex;
   justify-content: space-between;
-  font-size: 12px;
+  font-size: 2vw;
   color: rgba(0, 0, 0, 0.6);
 }
 .later .b {
-  font-size: 12px;
+  font-size: 2vw;
   font-weight: bold;
   color: #d8a857;
   line-height: 300%;

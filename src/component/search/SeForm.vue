@@ -22,19 +22,19 @@ export default {
 
 <style scoped>
 .seform {
-  font-size: 12px;
+  font-size: 2vw;
 }
 .row {
   display: flex;
   justify-content: space-between;
-  padding: 15px 0;
+  padding: 4% 0;
 }
 form {
   flex: 1;
   display: flex;
   justify-content: space-between;
-  height: 30px;
-  line-height: 30px;
+  height: 5vh;
+  line-height: 5vh;
 }
 form input {
   border: 1px solid #e8d2a6;
@@ -48,15 +48,15 @@ form input {
   background-image: url("~assets/image/search.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 15px;
+  background-size: 50%;
   background-color: #cca53f;
-  width: 30px;
-  height: 30px;
+  width: 5vh;
+  height: 5vh;
 }
 .buy {
   width: 20%;
-  height: 30px;
-  line-height: 30px;
+  height: 5vh;
+  line-height: 5vh;
   margin-left: 5%;
   text-align: center;
   color: #fff;

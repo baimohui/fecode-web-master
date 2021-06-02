@@ -42,18 +42,18 @@ export default {
 
 <style scoped>
 #indn {
-  margin-top: 10px;
+  margin-top: 3%;
 }
 #indn .lists {
   background-image: url("~assets/image/newsbgi.jpg");
-  padding: 20px 0;
-  font-size: 14px;
+  padding: 5% 0;
+  font-size: 3vw;
 }
 .lists .front {
   width: 90%;
   background-color: #fff;
   margin: 0 auto;
-  padding: 15px;
+  padding: 4%;
 }
 .lists .front .head {
   display: flex;
@@ -61,10 +61,10 @@ export default {
 }
 .lists .front .head .r {
   color: #7b7b7b;
-  font-size: 12px;
+  font-size: 2vw;
 }
 .nlist {
-  font-size: 12px;
+  font-size: 2vw;
 }
 .nlist .news {
   margin-top: 10px;
@@ -76,24 +76,24 @@ export default {
   width: 90%;
   background-color: #fff;
   margin: 20px auto;
-  padding: 15px;
+  padding: 4%;
 }
 .end .head {
-  font-size: 16px;
+  font-size: 4vw;
 }
 .end .commute {
   display: flex;
   justify-content: space-between;
 }
 .end .commute .l {
-  font-size: 12px;
+  font-size: 2vw;
   width: 60%;
   color: #7b7b7b;
 }
 .end .commute .r {
-  width: 100px;
-  height: 30px;
-  line-height: 30px;
+  width: 24vw;
+  height: 5vh;
+  line-height: 5vh;
   color: #fff;
   text-align: center;
   background-color: #d4aa58;

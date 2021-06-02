@@ -57,7 +57,7 @@ export default {
   margin: 5% 0;
 }
 .snapshot .bp {
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 1);
   height: 100%;
   display: flex;
   justify-content: center;
@@ -78,7 +78,7 @@ export default {
 .snapshot .sps li {
   border: 1px solid rgba(0, 0, 0, 0.3);
   width: 6vw;
-  padding: 4% 4%;
+  /* padding: 4% 4%; */
   /* height: 6vw; */
 }
 .snapshot .text {
@@ -124,6 +124,7 @@ export default {
   margin: 5% 0;
 }
 .picdt .b {
+  font-size: 2vw;
   color: rgba(0, 0, 0, 0.7)
 }
 </style>
